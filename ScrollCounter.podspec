@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ScrollCounter"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "A Robinhood inspired scrolling effect for transitioning between numbers."
 
   # This description is used to generate tags and improve search results.
@@ -76,8 +76,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.platform     = :ios
-  spec.ios.deployment_target  = '10.0'
-  spec.swift_versions = '4.2'
+  spec.ios.deployment_target  = '12.0'
+  spec.swift_versions = '5.0'
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -85,8 +85,8 @@ Pod::Spec.new do |spec|
   #  Specify the location from where the source should be retrieved.
   #  Supports git, hg, bzr, svn and HTTP.
   #
-
-  spec.source       = { :git => "https://github.com/stokatyan/ScrollCounter.git", :tag => "#{spec.version}" }
+  # Modified to point to this repository
+  spec.source       = { :git => "https://github.com/modernistik/ScrollCounter.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -97,7 +97,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "ScrollCounter"
+  spec.source_files  = "Source"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
